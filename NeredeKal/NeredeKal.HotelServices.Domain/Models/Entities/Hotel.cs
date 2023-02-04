@@ -11,6 +11,6 @@ namespace NeredeKal.HotelServices.Domain.Models.Entities
 		public string AuthorizedName { get; set; }
 		public string AuthorizedLastName { get; set; }
 		public string CompanyName { get; set; }
-
+		public ICollection<Contact> Contacts { get; set; }
 	}
 }
