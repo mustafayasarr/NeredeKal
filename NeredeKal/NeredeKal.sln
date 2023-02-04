@@ -3,23 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-<<<<<<< Updated upstream
-Global
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-=======
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4A3D280B-0681-4BC5-8526-E01C7CE2A113}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6A818AA9-C956-4015-802F-117558B84542}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OtelServices", "OtelServices", "{033E6025-7EF0-4C38-91F1-FEC30094DEE3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HotelServices", "HotelServices", "{D93D40C1-34BE-45B2-A6B0-7EB039D23B36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.OtelServices.Core", "NeredeKal.OtelServices.Core\NeredeKal.OtelServices.Core.csproj", "{6FE53246-5765-4773-9C23-47411787C5DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.HotelServices.Core", "NeredeKal.HotelServices.Core\NeredeKal.HotelServices.Core.csproj", "{6389605B-EE0A-4B70-BAF9-9BBBCD884A9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.OtelServices.Api", "NeredeKal.OtelServices.Api\NeredeKal.OtelServices.Api.csproj", "{8B9905F8-5508-417B-B61B-40AB660392EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.HotelServices.Domain", "NeredeKal.HotelServices.Domain\NeredeKal.HotelServices.Domain.csproj", "{410CEBAF-C981-403D-8946-F6D6CF24870E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.OtelServices.Domain", "NeredeKal.OtelServices.Domain\NeredeKal.OtelServices.Domain.csproj", "{0732AD75-00D2-40E5-AD22-EC61042919D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.HotelServices.Infrastructure", "NeredeKal.HotelServices.Infrastructure\NeredeKal.HotelServices.Infrastructure.csproj", "{927B95C6-C35D-4D67-881D-61AF6FD035BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.OtelServices.Infrastructure", "NeredeKal.OtelServices.Infrastructure\NeredeKal.OtelServices.Infrastructure.csproj", "{AD461E15-5FE4-49BC-BB8E-1332D9EE59D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.HotelServices.API", "NeredeKal.HotelServices.API\NeredeKal.HotelServices.API.csproj", "{D9CCC6C1-23D3-4E85-96DD-9D4560955A6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,34 +21,33 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6FE53246-5765-4773-9C23-47411787C5DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6FE53246-5765-4773-9C23-47411787C5DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6FE53246-5765-4773-9C23-47411787C5DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6FE53246-5765-4773-9C23-47411787C5DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8B9905F8-5508-417B-B61B-40AB660392EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B9905F8-5508-417B-B61B-40AB660392EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B9905F8-5508-417B-B61B-40AB660392EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B9905F8-5508-417B-B61B-40AB660392EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0732AD75-00D2-40E5-AD22-EC61042919D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0732AD75-00D2-40E5-AD22-EC61042919D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0732AD75-00D2-40E5-AD22-EC61042919D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0732AD75-00D2-40E5-AD22-EC61042919D1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD461E15-5FE4-49BC-BB8E-1332D9EE59D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD461E15-5FE4-49BC-BB8E-1332D9EE59D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD461E15-5FE4-49BC-BB8E-1332D9EE59D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD461E15-5FE4-49BC-BB8E-1332D9EE59D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6389605B-EE0A-4B70-BAF9-9BBBCD884A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6389605B-EE0A-4B70-BAF9-9BBBCD884A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6389605B-EE0A-4B70-BAF9-9BBBCD884A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6389605B-EE0A-4B70-BAF9-9BBBCD884A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{410CEBAF-C981-403D-8946-F6D6CF24870E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{410CEBAF-C981-403D-8946-F6D6CF24870E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{410CEBAF-C981-403D-8946-F6D6CF24870E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{410CEBAF-C981-403D-8946-F6D6CF24870E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{927B95C6-C35D-4D67-881D-61AF6FD035BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927B95C6-C35D-4D67-881D-61AF6FD035BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927B95C6-C35D-4D67-881D-61AF6FD035BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927B95C6-C35D-4D67-881D-61AF6FD035BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9CCC6C1-23D3-4E85-96DD-9D4560955A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9CCC6C1-23D3-4E85-96DD-9D4560955A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9CCC6C1-23D3-4E85-96DD-9D4560955A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9CCC6C1-23D3-4E85-96DD-9D4560955A6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{033E6025-7EF0-4C38-91F1-FEC30094DEE3} = {4A3D280B-0681-4BC5-8526-E01C7CE2A113}
-		{6FE53246-5765-4773-9C23-47411787C5DC} = {033E6025-7EF0-4C38-91F1-FEC30094DEE3}
-		{8B9905F8-5508-417B-B61B-40AB660392EC} = {033E6025-7EF0-4C38-91F1-FEC30094DEE3}
-		{0732AD75-00D2-40E5-AD22-EC61042919D1} = {033E6025-7EF0-4C38-91F1-FEC30094DEE3}
-		{AD461E15-5FE4-49BC-BB8E-1332D9EE59D9} = {033E6025-7EF0-4C38-91F1-FEC30094DEE3}
+		{D93D40C1-34BE-45B2-A6B0-7EB039D23B36} = {6A818AA9-C956-4015-802F-117558B84542}
+		{6389605B-EE0A-4B70-BAF9-9BBBCD884A9A} = {D93D40C1-34BE-45B2-A6B0-7EB039D23B36}
+		{410CEBAF-C981-403D-8946-F6D6CF24870E} = {D93D40C1-34BE-45B2-A6B0-7EB039D23B36}
+		{927B95C6-C35D-4D67-881D-61AF6FD035BC} = {D93D40C1-34BE-45B2-A6B0-7EB039D23B36}
+		{D9CCC6C1-23D3-4E85-96DD-9D4560955A6B} = {D93D40C1-34BE-45B2-A6B0-7EB039D23B36}
 	EndGlobalSection
->>>>>>> Stashed changes
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {41DB4175-E81A-4A91-8572-F1C14092F0CA}
 	EndGlobalSection
