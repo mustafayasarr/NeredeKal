@@ -7,13 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HotelServices", "HotelServices", "{D93D40C1-34BE-45B2-A6B0-7EB039D23B36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.HotelServices.Core", "NeredeKal.HotelServices.Core\NeredeKal.HotelServices.Core.csproj", "{6389605B-EE0A-4B70-BAF9-9BBBCD884A9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeredeKal.HotelServices.Core", "NeredeKal.HotelServices.Core\NeredeKal.HotelServices.Core.csproj", "{6389605B-EE0A-4B70-BAF9-9BBBCD884A9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.HotelServices.Domain", "NeredeKal.HotelServices.Domain\NeredeKal.HotelServices.Domain.csproj", "{410CEBAF-C981-403D-8946-F6D6CF24870E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeredeKal.HotelServices.Domain", "NeredeKal.HotelServices.Domain\NeredeKal.HotelServices.Domain.csproj", "{410CEBAF-C981-403D-8946-F6D6CF24870E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.HotelServices.Infrastructure", "NeredeKal.HotelServices.Infrastructure\NeredeKal.HotelServices.Infrastructure.csproj", "{927B95C6-C35D-4D67-881D-61AF6FD035BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeredeKal.HotelServices.Infrastructure", "NeredeKal.HotelServices.Infrastructure\NeredeKal.HotelServices.Infrastructure.csproj", "{927B95C6-C35D-4D67-881D-61AF6FD035BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.HotelServices.API", "NeredeKal.HotelServices.API\NeredeKal.HotelServices.API.csproj", "{D9CCC6C1-23D3-4E85-96DD-9D4560955A6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeredeKal.HotelServices.API", "NeredeKal.HotelServices.API\NeredeKal.HotelServices.API.csproj", "{D9CCC6C1-23D3-4E85-96DD-9D4560955A6B}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5163E3B9-B289-41EC-9A67-D5F69035AC9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{D9CCC6C1-23D3-4E85-96DD-9D4560955A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9CCC6C1-23D3-4E85-96DD-9D4560955A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9CCC6C1-23D3-4E85-96DD-9D4560955A6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5163E3B9-B289-41EC-9A67-D5F69035AC9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5163E3B9-B289-41EC-9A67-D5F69035AC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5163E3B9-B289-41EC-9A67-D5F69035AC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5163E3B9-B289-41EC-9A67-D5F69035AC9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
