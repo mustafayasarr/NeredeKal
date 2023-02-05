@@ -24,8 +24,9 @@ namespace NeredeKal.HotelServices.API.Bootstrapper
 
 			services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
 
-
 			return services;
 		}
+		
 	}
+
 }

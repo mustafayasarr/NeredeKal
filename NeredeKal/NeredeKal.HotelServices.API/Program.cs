@@ -1,22 +1,23 @@
-using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Hosting;
 using NeredeKal.HotelServices.API.Bootstrapper;
-using NeredeKal.HotelServices.Domain.Filters;
 using NeredeKal.HotelServices.Infrastructure.Context;
+using Serilog;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddLogging();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.RegisterConfigurationServices(builder.Configuration);
 builder.Services.RegisterFluentValidation();
+builder.Services.RegisterElasticConfiguration(builder);
+
+builder.WebHost.UseSerilog();
 
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -37,3 +38,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+

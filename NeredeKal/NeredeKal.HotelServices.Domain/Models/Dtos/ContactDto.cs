@@ -1,10 +1,5 @@
 ﻿using FluentValidation;
 using NeredeKal.HotelServices.Domain.Models.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NeredeKal.HotelServices.Domain.Models.Dtos
 {
