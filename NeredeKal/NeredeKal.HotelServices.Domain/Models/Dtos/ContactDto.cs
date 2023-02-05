@@ -10,9 +10,9 @@ namespace NeredeKal.HotelServices.Domain.Models.Dtos
 {
 	public class ContactDto
 	{
-		public ContactDto(int contactInformationId, ContactType contactType, string contactContent, DateTime createdDate)
+		public ContactDto(Guid contactId, ContactType contactType, string contactContent, DateTime createdDate)
 		{
-			Id = contactInformationId;
+			Id = contactId;
 			ContactContent = contactContent;
 			ContactType = contactType;
 			CreatedDate = createdDate;
@@ -22,7 +22,7 @@ namespace NeredeKal.HotelServices.Domain.Models.Dtos
 
 		}
 
-		public int Id { get; set; }
+		public Guid Id { get; set; }
 		public ContactType ContactType { get; set; }
 		public string ContactContent { get; set; }
 		public DateTime CreatedDate { get; set; }
