@@ -1,10 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using NeredeKal.HotelServices.API.Bootstrapper;
 using NeredeKal.HotelServices.API.Middleware;
 using NeredeKal.HotelServices.Infrastructure.Context;
 using Serilog;
-using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,10 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NeredeKal.HotelServices.Domain.Models.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NeredeKal.HotelServices.Infrastructure.Context
 {

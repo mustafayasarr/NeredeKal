@@ -39,7 +39,13 @@ services:
     - ELASTICSEARCH_URL=http://localhost:9200
    networks:
     - elastic
-  
+
+  rabbitmq:
+        image: rabbitmq:3-management
+        container_name: rabbitmq
+        ports:
+            - 5672:5672
+            - 15672:15672
 
 networks:
   elastic:

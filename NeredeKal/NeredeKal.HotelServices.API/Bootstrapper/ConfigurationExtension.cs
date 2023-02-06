@@ -6,7 +6,6 @@ using MediatR;
 using NeredeKal.HotelServices.Core.Gateways.ReportService;
 using NeredeKal.HotelServices.Core.Gateways;
 using NeredeKal.HotelServices.Core.Subscribers.Report;
-using RabbitMQ.Client;
 
 namespace NeredeKal.HotelServices.API.Bootstrapper
 {
