@@ -1,17 +1,25 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\NeredeKal</DockerfileContext>
+    <DockerComposeProjectPath>..\NeredeKal\docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>de57f65d-bb21-4dcf-88c6-659cbf152063</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DotNetCore.CAP" Version="6.2.0" />
+    <PackageReference Include="ClosedXML" Version="0.100.3" />
     <PackageReference Include="DotNetCore.CAP.Dashboard" Version="6.2.0" />
     <PackageReference Include="DotNetCore.CAP.PostgreSql" Version="6.2.0" />
     <PackageReference Include="DotNetCore.CAP.RabbitMQ" Version="6.2.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0" />
     <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="7.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
@@ -23,15 +31,18 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.1" />
-    <PackageReference Include="RestSharp" Version="106.15.0" />
-    <PackageReference Include="RestSharpPolly" Version="1.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NeredeKal.HotelServices.Domain\NeredeKal.HotelServices.Domain.csproj" />
-    <ProjectReference Include="..\NeredeKal.HotelServices.Infrastructure\NeredeKal.HotelServices.Infrastructure.csproj" />
+    <ProjectReference Include="..\NeredeKal.ReportServices.Core\NeredeKal.ReportServices.Core.csproj" />
+    <ProjectReference Include="..\NeredeKal.ReportServices.Infrastructure\NeredeKal.ReportServices.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Reports\" />
   </ItemGroup>
 
 </Project>

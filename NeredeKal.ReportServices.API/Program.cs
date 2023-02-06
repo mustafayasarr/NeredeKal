@@ -1,23 +1,20 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using NeredeKal.HotelServices.API.Bootstrapper;
-using NeredeKal.HotelServices.Infrastructure.Context;
-using Serilog;
-using System.Reflection;
+using Microsoft.Extensions.FileProviders;
+using NeredeKal.ReportServices.API.Bootstrapper;
+using NeredeKal.ReportServices.Infrastructure.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddLogging();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 builder.Services.RegisterConfigurationServices(builder.Configuration);
-builder.Services.RegisterFluentValidation();
-//builder.Services.RegisterElasticConfiguration(builder);
 builder.Services.AddCap(options =>
 {
-	options.UseEntityFramework<ApplicationDbContext>();
+	options.UseEntityFramework<ReportDbContext>();
 	options.UsePostgreSql(builder.Configuration.GetConnectionString("DevelopmentDbConnection"));
 	options.UseRabbitMQ(a =>
 	{
@@ -28,28 +25,35 @@ builder.Services.AddCap(options =>
 	options.UseDashboard();
 
 });
-
-//builder.WebHost.UseSerilog();
-
 var app = builder.Build();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
 	app.UseSwagger();
 	app.UseSwaggerUI();
 }
-
 using (var scope = app.Services.CreateScope())
 {
-	var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+	var db = scope.ServiceProvider.GetRequiredService<ReportDbContext>();
 	db.Database.Migrate();
 }
-
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseStaticFiles(new StaticFileOptions
+{
+	FileProvider = new PhysicalFileProvider(
+		   Path.Combine(builder.Environment.ContentRootPath, "Reports")),
+	RequestPath = "/Reports"
+});
+app.UseFileServer(new FileServerOptions
+{
+	FileProvider = new PhysicalFileProvider(
+		   Path.Combine(builder.Environment.ContentRootPath, "Reports")),
+	RequestPath = "/Reports",
+	EnableDirectoryBrowsing = true
+});
 app.MapControllers();
 
 app.Run();
-

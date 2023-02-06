@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DotNetCore.CAP" Version="6.2.0" />
-    <PackageReference Include="DotNetCore.CAP.Dashboard" Version="6.2.0" />
-    <PackageReference Include="DotNetCore.CAP.PostgreSql" Version="6.2.0" />
-    <PackageReference Include="DotNetCore.CAP.RabbitMQ" Version="6.2.0" />
-    <PackageReference Include="MediatR" Version="11.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="7.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
@@ -23,15 +18,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.1" />
-    <PackageReference Include="RestSharp" Version="106.15.0" />
-    <PackageReference Include="RestSharpPolly" Version="1.2.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NeredeKal.HotelServices.Domain\NeredeKal.HotelServices.Domain.csproj" />
-    <ProjectReference Include="..\NeredeKal.HotelServices.Infrastructure\NeredeKal.HotelServices.Infrastructure.csproj" />
+    <ProjectReference Include="..\NeredeKal.ReportServices.Domain\NeredeKal.ReportServices.Domain.csproj" />
   </ItemGroup>
 
 </Project>
