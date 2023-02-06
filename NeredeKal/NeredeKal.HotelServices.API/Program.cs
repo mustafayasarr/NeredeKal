@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using NeredeKal.HotelServices.API.Bootstrapper;
+using NeredeKal.HotelServices.API.Middleware;
 using NeredeKal.HotelServices.Infrastructure.Context;
 using Serilog;
 using System.Reflection;
@@ -38,6 +39,7 @@ if (app.Environment.IsDevelopment())
 	app.UseSwagger();
 	app.UseSwaggerUI();
 }
+app.UseMiddleware<RequestResponseLoggingMiddleware>();
 
 using (var scope = app.Services.CreateScope())
 {
