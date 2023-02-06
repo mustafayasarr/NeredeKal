@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>5163e3b9-b289-41ec-9a67-d5f69035ac9c</ProjectGuid>
+    <ProjectGuid>a33c6c32-420d-4c7c-bfa5-d5709f4513a5</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>neredekal.hotelservices.api</DockerServiceName>

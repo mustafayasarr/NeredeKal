@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-
-namespace NeredeKal.HotelServices.Domain.Models.Entities
+﻿namespace NeredeKal.HotelServices.Domain.Models.Entities
 {
-	public class Hotel:EntityBase<Guid>
+	public class Hotel : EntityBase<Guid>
 	{
 		public Hotel(string authorizedName, string authorizedLastName, string companyName)
 		{
-			AuthorizedName=authorizedName;
-			AuthorizedLastName=authorizedLastName;
-			CompanyName=companyName;
+			AuthorizedName = authorizedName;
+			AuthorizedLastName = authorizedLastName;
+			CompanyName = companyName;
 
 		}
 		public Hotel()

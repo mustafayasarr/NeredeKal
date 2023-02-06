@@ -8,8 +8,9 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["NeredeKal.HotelServices.API/NeredeKal.HotelServices.API.csproj", "NeredeKal.HotelServices.API/"]
-COPY ["NeredeKal.HotelServices.Infrastructure/NeredeKal.HotelServices.Infrastructure.csproj", "NeredeKal.HotelServices.Infrastructure/"]
+COPY ["NeredeKal.HotelServices.Core/NeredeKal.HotelServices.Core.csproj", "NeredeKal.HotelServices.Core/"]
 COPY ["NeredeKal.HotelServices.Domain/NeredeKal.HotelServices.Domain.csproj", "NeredeKal.HotelServices.Domain/"]
+COPY ["NeredeKal.HotelServices.Infrastructure/NeredeKal.HotelServices.Infrastructure.csproj", "NeredeKal.HotelServices.Infrastructure/"]
 RUN dotnet restore "NeredeKal.HotelServices.API/NeredeKal.HotelServices.API.csproj"
 COPY . .
 WORKDIR "/src/NeredeKal.HotelServices.API"

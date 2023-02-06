@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NeredeKal.HotelServices.Infrastructure.Repositories.Abstract
+﻿namespace NeredeKal.HotelServices.Infrastructure.Repositories.Abstract
 {
 	public interface IUnitOfWork : IDisposable
 	{
