@@ -40,7 +40,7 @@ namespace NeredeKal.ReportServices.Core.Services.Report
 					}
 				}
 				getEntity.ReportName = request.ReportName;
-				getEntity.Status = request.Status;
+				getEntity.Status = request.Status.Value;
 				getEntity.RequestObjectJson = request.JsonRequest;
 				getEntity.Message = request.Message;
 

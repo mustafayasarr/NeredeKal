@@ -7,12 +7,12 @@ namespace NeredeKal.ReportServices.Domain.Models.Messaging.Commands
 {
 	public class UpdateLocationReportCommand : IRequest<BaseResponseResult>
 	{
-		public Guid Id { get; set; }
-		public string ReportName { get; set; }
-		public DateTime CreatedDate { get; set; }
+		public Guid? Id { get; set; }
+		public string? ReportName { get; set; }
+		public DateTime? CreatedDate { get; set; }
 		public List<ReportItemDto>? ReportItems { get; set; }
-		public string JsonRequest { get; set; }
-		public ReportStatus Status { get; set; }
-		public string Message { get; set; }
+		public string? JsonRequest { get; set; }
+		public ReportStatus? Status { get; set; }
+		public string? Message { get; set; }
 	}
 }

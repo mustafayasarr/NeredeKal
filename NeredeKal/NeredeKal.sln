@@ -17,15 +17,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeredeKal.HotelServices.API
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReportServices", "ReportServices", "{61B28303-B740-489D-A45C-CB60F6F666CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.ReportServices.Core", "..\NeredeKal.ReportServices.Core\NeredeKal.ReportServices.Core.csproj", "{277C7252-DF2B-4FBC-9778-469FFD9EBA9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeredeKal.ReportServices.Core", "..\NeredeKal.ReportServices.Core\NeredeKal.ReportServices.Core.csproj", "{277C7252-DF2B-4FBC-9778-469FFD9EBA9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.ReportServices.Domain", "..\NeredeKal.ReportServices.Domain\NeredeKal.ReportServices.Domain.csproj", "{1B46386D-35EE-4EE2-8807-0AB9646BAB13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeredeKal.ReportServices.Domain", "..\NeredeKal.ReportServices.Domain\NeredeKal.ReportServices.Domain.csproj", "{1B46386D-35EE-4EE2-8807-0AB9646BAB13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.ReportServices.Infrastructure", "..\NeredeKal.ReportServices.Infrastructure\NeredeKal.ReportServices.Infrastructure.csproj", "{7D2759DF-6DD2-4A7A-88CF-0ABC6D76B51A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeredeKal.ReportServices.Infrastructure", "..\NeredeKal.ReportServices.Infrastructure\NeredeKal.ReportServices.Infrastructure.csproj", "{7D2759DF-6DD2-4A7A-88CF-0ABC6D76B51A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeredeKal.ReportServices.API", "..\NeredeKal.ReportServices.API\NeredeKal.ReportServices.API.csproj", "{57F30633-5E59-4EB5-BEB3-F01A489ED49F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeredeKal.ReportServices.API", "..\NeredeKal.ReportServices.API\NeredeKal.ReportServices.API.csproj", "{57F30633-5E59-4EB5-BEB3-F01A489ED49F}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F7AAFEE5-07EC-4BEF-A543-D3344F81AE17}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A33C6C32-420D-4C7C-BFA5-D5709F4513A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,10 +65,10 @@ Global
 		{57F30633-5E59-4EB5-BEB3-F01A489ED49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57F30633-5E59-4EB5-BEB3-F01A489ED49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57F30633-5E59-4EB5-BEB3-F01A489ED49F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F7AAFEE5-07EC-4BEF-A543-D3344F81AE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7AAFEE5-07EC-4BEF-A543-D3344F81AE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7AAFEE5-07EC-4BEF-A543-D3344F81AE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7AAFEE5-07EC-4BEF-A543-D3344F81AE17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A33C6C32-420D-4C7C-BFA5-D5709F4513A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A33C6C32-420D-4C7C-BFA5-D5709F4513A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A33C6C32-420D-4C7C-BFA5-D5709F4513A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A33C6C32-420D-4C7C-BFA5-D5709F4513A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

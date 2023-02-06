@@ -13,7 +13,7 @@ namespace NeredeKal.HotelServices.Domain.Models.Results.Report
 		{
 			ReportItems = new List<ReportItemDto>();
 		}
-		public int Id { get; set; }
+		public Guid Id { get; set; }
 		public string ReportName { get; set; }
 		public DateTime CreatedDate { get; set; }
 		public List<ReportItemDto> ReportItems { get; set; }

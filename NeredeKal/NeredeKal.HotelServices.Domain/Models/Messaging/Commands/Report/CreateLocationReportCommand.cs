@@ -11,7 +11,7 @@ namespace NeredeKal.HotelServices.Domain.Models.Messaging.Commands.Report
 {
 	public sealed record class CreateLocationReportCommand : IRequest<BaseResponseResult<LocationReportResult>>
 	{
-		public CreateLocationReportCommand(int id, string reportName, string location)
+		public CreateLocationReportCommand(Guid id, string reportName, string location)
 		{
 			Id = id;
 			ReportName = reportName;
@@ -21,7 +21,7 @@ namespace NeredeKal.HotelServices.Domain.Models.Messaging.Commands.Report
 		{
 
 		}
-		public int Id { get; set; }
+		public Guid Id { get; set; }
 		public string ReportName { get; set; }
 		public string Location { get; set; }
 	}

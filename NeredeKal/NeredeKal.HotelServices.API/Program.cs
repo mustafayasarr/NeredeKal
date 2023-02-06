@@ -14,7 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.RegisterConfigurationServices(builder.Configuration);
 builder.Services.RegisterFluentValidation();
-//builder.Services.RegisterElasticConfiguration(builder);
+builder.Services.RegisterElasticConfiguration(builder);
 builder.Services.AddCap(options =>
 {
 	options.UseEntityFramework<ApplicationDbContext>();
@@ -29,7 +29,7 @@ builder.Services.AddCap(options =>
 
 });
 
-//builder.WebHost.UseSerilog();
+builder.Host.UseSerilog();
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Serilog;
+using Serilog.Exceptions;
 using Serilog.Sinks.Elasticsearch;
 using System.Reflection;
 
@@ -13,8 +14,9 @@ namespace NeredeKal.HotelServices.API.Bootstrapper
 			Log.Logger = new LoggerConfiguration()
 				.Enrich.FromLogContext()
 				.Enrich.WithMachineName()
-			.WriteTo.Debug()
-			.WriteTo.Console()
+				.Enrich.WithExceptionDetails()
+				.WriteTo.Debug()
+				.WriteTo.Console()
 				.WriteTo.Elasticsearch(ConfigureElasticSink(builder.Configuration, environment))
 				.Enrich.WithProperty("Environment", environment)
 				.ReadFrom.Configuration(builder.Configuration)
